@@ -1,0 +1,63 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+    <title>Туры</title>
+{% endblock title %}
+{% load static %}
+
+{% block content %}
+	<section class="main-section paddind" id="Tours">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Туры</h2>
+			<h6>Вы можете выбрать </h6>
+			<div class="toursFilter">
+				<ul class="Tours-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="current">Все</a></li>
+					<li><a href="#" data-filter=".southafrica">ЮАР</a></li>
+					<li><a href="#" data-filter=".norway">Норвегия</a></li>
+					<li><a href="#" data-filter=".thailand">Тайланд</a></li>
+					<li><a href="#" data-filter=".russia">Россия</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="toursContainer wow fadeInUp delay-04s">
+
+			{% for post in tour %}
+			{% if post.countries == "thailand"  %}
+			<div class="Tours-box thailand">
+				<a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
+				<h3>{{ post.name }}</h3>
+				<li><a  class="link animated fadeInUp delay-1s servicelink" href="{% url 'tour_detail'%}">Подробнее</a></li>
+			</div>
+
+			{% elif post.countries == "norway"  %}
+			<div class="Tours-box norway">
+				<a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
+				<h3>{{ post.name }}</h3>
+				<li><a  class="link animated fadeInUp delay-1s servicelink" href="{% url 'tour_detail'%}">Подробнее</a></li>
+			</div>
+				
+
+			{% elif post.countries == "southafrica"  %}
+			<div class="Tours-box southafrica">
+				<a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
+				<h3>{{ post.name }}</h3>
+				<li><a  class="link animated fadeInUp delay-1s servicelink" href="{% url 'tour_detail'%}">Подробнее</a></li>
+			</div>
+
+			{% else %}
+			<div class="Tours-box russia">
+				<a href="{{ post.img.url }}"><img src="{{ post.img.url }}" alt=""></a>
+				<h3>{{ post.name }}</h3>
+				<li><a  class="link animated fadeInUp delay-1s servicelink" href="{% url 'tour_detail'%}">Подробнее</a></li>
+			</div>
+				
+		</div>
+
+		{% endif %}
+		{% endfor %}
+	</section>
+	<!--main-section-end-->
+{% endblock content %}

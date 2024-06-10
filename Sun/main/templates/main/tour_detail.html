@@ -1,0 +1,64 @@
+{% extends 'main/main.html' %}
+
+{% block title %}
+    <title>{{ post.name }}</title>
+{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="main-section alabaster">
+		<!--main-section alabaster-start-->
+    {% for post in tour %}
+    {% if post.countries == "russia"  %}
+		<div class="container">
+			<div class="row">
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+					<img src="{{ post.img.url }}" alt="">
+				</figure>
+				<div class="col-lg-7 col-sm-8 featured-work">
+					<h2>{{ post.name }}</h2>
+					<div class="featured-box">
+						<div class="featured-box-col2 wow fadeInRight delay-02s">
+							<h3></h3>
+							<p>{{ post.description }}</p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col2 wow fadeInRight delay-04s">
+							<h3></h3>
+							<p>{{ post.date }}</p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col2 wow fadeInRight delay-06s">
+							<h3></h3>
+							<p>Цена: {{ post.price }} руб.</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id="myModalRu" class="form">
+				<div class="modal-content">
+						<form id="booking-formRu">
+						<input class="form-control input-text" type="text" placeholder="Ваше имя" required>
+						<input class="form-control input-text" type="email" placeholder="Ваш email" required>
+						<input class="form-control input-text" type="phone" placeholder="Ваш телефон" required>
+						<input class="form-control input-text" type="pasport" placeholder="Ваш паспорт" required>
+						<input class="form-control input-text" id="card-element" placeholder="Введите данные вашей карты">
+						<p></p>
+						<button type="submit" class="input-btn">Забронировать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+{% endif %}
+
+
+{% endfor post in tour %}
+
+{% endblock content %}
+

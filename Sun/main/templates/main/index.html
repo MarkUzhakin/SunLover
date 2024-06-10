@@ -1,0 +1,289 @@
+{% extends 'main/main.html' %}
+{% block title %}
+    <title>Главная Страница</title>
+{% endblock title %}
+{% load static %}
+
+{% block content %}
+	<header class="header" id="header">
+		<!--header-start-->
+		<div class="container">
+			<figure class="logo animated fadeInDown delay-07s">
+				<a href="#"><img src="{% static 'img/sun_logo.png' %}" alt=""></a>
+			</figure>
+			<h1 class="animated fadeInDown delay-07s">Welcome To SunLover</h1>
+			<ul class="we-create animated fadeInUp delay-1s">
+				<li>We are a travel agency that loves to give emotions</li>
+			</ul>
+			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+		</div>
+	</header>
+	<!--header-end-->
+
+	<section class="main-section" id="service">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>О нас</h2>
+			<h6>Мы предлагаем отличный сервис по поиску туров</h6>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-globe"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>КТО МЫ?</h3>
+							<p>Мы - команда профессионалов, специализирующихся на организации горящих экстремальных туров. Мы стремимся предложить вам незабываемые приключения и адреналиновые впечатления!</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>ЦЕЛИ</h3>
+							<p>Наша цель - предоставить вам возможность испытать непревзойденные эмоции и увидеть мир с новой, захватывающей перспективой.</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-plane"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>ВОЗМОЖНОСТИ</h3>
+							<p>Мы предлагаем широкий спектр экстремальных туров, включающих такие виды активностей, как парашютный спорт, бейсджампинг, скалолазание, дайвинг, рафтинг и многое другое. Независимо от вашего уровня подготовки, у нас найдется подходящий тур!</p>
+						</div>
+					</div>
+<!--					<div class="service-list">-->
+<!--						<div class="service-list-col1">-->
+<!--							<i class="fa fa-medkit"></i>-->
+<!--						</div>-->
+<!--						<div class="service-list-col2">-->
+<!--							<h3>aaa</h3>-->
+<!--							<p>bbb</p>-->
+<!--						</div>-->
+<!--					</div>-->
+				</div>
+				<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+					<img src="{% static 'img/collages.png' %}" alt="">
+				</figure>
+
+			</div>
+		</div>
+	</section>
+	<!--main-section-end-->
+
+	<section class="main-section alabaster">
+		<!--main-section alabaster-start-->
+		<div class="container">
+			<div class="row">
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+					<img src="{% static 'img/mountains.png' %}" alt="">
+				</figure>
+				<div class="col-lg-7 col-sm-8 featured-work">
+					<h2>Наши туры подойдут вам, если:</h2>
+					<P class="padding-b">                                                                            </P>
+
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-02s">
+							<i class="fa fa-bicycle"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-02s">
+							<h3>                 </h3>
+							<p>Вы-любители экстремальных видов спорта, желающие испытать новые ощущения и преодолеть свои возможности. </p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-04s">
+							<i class="fa fa-flag"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-04s">
+							<h3>                                                                     </h3>
+							<p>Вы-путешественники, ищущие незабываемые приключения и новые впечатления. </p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-06s">
+							<i class="fa fa-briefcase"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-06s">
+							<h3>                                                                          </h3>
+							<p>Вы-начинаете свой путь путешественника в открытии новых стран, необычных развлечений и захватывающих эмоций. </p>
+						</div>
+					</div>
+					<a class="Learn-More" href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--main-section alabaster-end-->
+
+	<section class="main-section client-part" id="client">
+		<!--main-section client-part-start-->
+		<div class="container">
+			<b class="quote-right wow fadeInDown delay-03"><i class="fa fa-quote-right"></i></b>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="client-part-haead wow fadeInDown delay-05">Было очень приятно работать с ребятами из SunLover. Они позаботились о том, чтобы нам было весело!</p>
+				</div>
+			</div>
+			<ul class="client wow fadeIn delay-05s">
+				<li><a href="#">
+            	<img src="{% static 'img/client-pic1.jpg' %}" alt="">
+                <h3>Иван Иванов</h3>
+                <span>Прохожий</span>
+            </a></li>
+			</ul>
+		</div>
+	</section>
+	<!--main-section client-part-end-->
+
+	<div class="c-logo-part">
+		<!--c-logo-part-start-->
+		<div class="container">
+			<ul>
+				<li><a href="#"><img src="{% static 'img/c-liogo1.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo2.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo3.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo4.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo5.png' %}" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--c-logo-part-end-->
+
+	<section class="main-section team" id="team">
+		<!--main-section team-start-->
+		<div class="container">
+			<h2>Команда</h2>
+			<h6>Взгляните поближе на нашу замечательную команду.</h6>
+			<div class="team-leader-block clearfix">
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-03s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static 'img/team1.jpg' %}" alt="">
+						<ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-03s">Марк Ужакин</h3>
+					<span class="wow fadeInDown delay-03s">Разработчик</span>
+					<p class="wow fadeInDown delay-03s">Что нибудь про Марка или цитата.</p>
+				</div>
+				{% comment %} <div class="team-leader-box">
+					<div class="team-leader  wow fadeInDown delay-06s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static '' %}" alt="">
+						<ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-06s">Имя</h3>
+					<span class="wow fadeInDown delay-06s">Кто он?</span>
+					<p class="wow fadeInDown delay-06s">Что нибудь про него</p>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static '' %}" alt="">
+						<ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-06s">Имя</h3>
+					<span class="wow fadeInDown delay-06s">Кто он?</span>
+					<p class="wow fadeInDown delay-06s">Что нибудь про него</p>
+				</div> {% endcomment %}
+			</div>
+		</div>
+	</section>
+	<!--main-section team-end-->
+
+	<section class="business-talking">
+		<!--business-talking-start-->
+		<div class="container">
+			<h2>Есть вопросы? Свяжись с нами!</h2>
+		</div>
+	</section>
+	<!--business-talking-end-->
+
+	<div class="container">
+		<section class="main-section contact" id="contact">
+
+			<div class="row">
+				<div class="col-lg-6 col-sm-7 wow fadeInLeft">
+					<div class="contact-info-box address clearfix">
+						<h3><i class=" icon-map-marker"></i>Адрес:</h3>
+						<span>Маяковского 20<br>ТИСБИ, казань.</span>
+					</div>
+					<div class="contact-info-box phone clearfix">
+						<h3><i class="fa fa-phone"></i>Тел.:</h3>
+						<span>+7 (993)40180-50</span>
+					</div>
+					<div class="contact-info-box email clearfix">
+						<h3><i class="fa fa-pencil"></i>Почта:</h3>
+						<span>hello@sunlover.com</span>
+					</div>
+					<div class="contact-info-box hours clearfix">
+						<h3><i class="fa fa-clock-o"></i>Время:</h3>
+						<span><strong> Понедельник - Четверг: </strong> 10:00 - 18:00 <br><strong> Пятница: </strong> 10:00 - 16:00 <br><strong> Суббота - Воскресение: </strong> Лучше не спрашивайте. </span>
+					</div>
+					<ul class="social-link">
+						<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+					<div class="form">
+
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Имя" data-rule="minlen:4" data-msg="Пожалуйста, введите не менее 4 символов" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Почта" data-rule="email" data-msg="Введите, пожалуйста, действительный адрес электронной почты" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Тема" data-rule="minlen:4" data-msg="Пожалуйста, введите не менее 8 символов темы" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Пожалуйста, напишите нам что-нибудь" placeholder="Сообщение"></textarea>
+								<div class="validation"></div>
+							</div>
+
+							<div class="text-center"><button type="submit" class="input-btn">Отправить</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-logo"><a href="#"><img src="{% static 'img/sun_logo.png' %}" alt=""></a></div>
+			<span class="copyright">&copy; SunLover. Все права защищены</span>
+			<div class="credits">
+				Разработано <a>SunLover</a>
+			</div>
+		</div>
+	</footer>
+
+{% endblock content %}
